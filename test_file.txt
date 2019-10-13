@@ -1,0 +1,14 @@
+nextcloud.meklon.net
+meklon.net
+meklon.net
+habr.com
+ત્યાં કોઈ એવું ડોમેન નથી
+ya.ru
+google.com
+amazon.com
+facebook.com		
+0.pool.ntp.org
+thereisnosuchdomain.org
+github. com
+
+vk.com 
