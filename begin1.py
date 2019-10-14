@@ -9,11 +9,11 @@ for line in f:
         spisok.append(line.strip())
 new_spis = [el for el, _ in itertools.groupby(spisok)]
 
-spisok_ip = list()
-i = 0
+spisok_ip = {}
 for ip in new_spis:
-    if i < 10: #чтобы не падало на крокозябрах
-        for ip4 in socket.gethostbyname_ex(ip)[2]:
-            spisok_ip.append([socket.gethostbyname_ex(ip)[0], socket.gethostbyname_ex(ip4)[0]])
-            i += 1 #и это тоже убрать
-pprint(spisok_ip)
+    try:  
+        spisok_ip[socket.gethostbyname_ex(ip)[0]] = (socket.gethostbyname_ex(ip)[2])
+    except Exception:
+        spisok_ip[ip] = (None)
+print(spisok_ip)
+
