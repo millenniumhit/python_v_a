@@ -1,7 +1,7 @@
 import itertools
 from pprint import pprint
 import socket
-from numpy import ndarray
+#from numpy import ndarray
 f = open('test_file.txt', 'r')
 spisok=list()
 for line in f:
